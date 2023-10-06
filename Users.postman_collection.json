@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "d65002d2-e85f-4873-b5b9-b3bdcb05a2a0",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Register_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"29883\",\r\n    \"name\": \"Luis\",\r\n    \"charge\": \"Lider\",\r\n    \"nit\": \"1020\",\r\n    \"cellphone\": \"31323398\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit_users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"12345\",\r\n    \"name\": \"Johan\",\r\n    \"charge\": \"Administrador\",\r\n    \"nit\": \"5625\",\r\n    \"cellphone\": \"3132339889\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit_users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search_users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_users",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"29883\",\r\n     \"nit\": \"3050\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delete_users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete_users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
